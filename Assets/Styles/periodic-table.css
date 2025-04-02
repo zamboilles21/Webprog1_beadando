@@ -1,0 +1,49 @@
+table {
+    border-collapse: collapse;
+    z-index: 10;
+}
+
+.cell-border {
+    border: 2px solid hsl(var(--foreground-color));
+}
+
+td {
+    width: 65px;
+    height: 65px;
+    position: relative;
+}
+
+.atomic-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0.8em;
+    margin: 3px 0 0 3px;
+}
+
+.atomic-mass {
+    position: absolute;
+    margin: 3px 3px 0 0;
+    top: 0;
+    right: 0;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.atomic-symbol {
+    margin: 0;
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+}
+
+.atomic-name {
+    position: absolute;
+    margin: 0 0 3px 0;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    font-size: 0.8em;
+}
