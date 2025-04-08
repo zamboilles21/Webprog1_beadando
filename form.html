@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Prog Gyak Beadandó</title>
+
+    <link rel="stylesheet" href="Assets/Styles/main.css">
+    <link rel="stylesheet" href="Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="Assets/Styles/form.css">
+
+    <script src="Assets/Scripts/form-validation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="Assets/Images/internetIcon.png" alt="Internet" width="50px">
+        <h1>Web Prog Gyak Beadandó</h1>
+        <nav>
+            <a href="index.html">Kezdőoldal</a>
+            <a href="periodic-table.html">Periódusos rendszer</a>
+            <a href="quantum-physics.html">Quantum fizika</a>
+            <a href="calculus.html">Kalkulus</a>
+            <a href="form.html">Űrlap</a>
+        </nav>
+    </header>
+    <main>
+        <section class="vertical-section" style="width: 50%;">
+            <img src="Assets/Images/paper.png" alt="Paper" width="100px">
+            <h2>Űrlap</h2>
+            <form>
+                <fieldset>
+                    <legend>Ellenőrzött űrlap</legend>
+                    <label for="name">Teljes név</label>
+                    <input required type="text" id="name" name="name" placeholder="Kis Pista">
+
+                    <label for="gender">Nem</label>
+                    <select required id="gender" name="gender">
+                        <option value="male">Férfi</option>
+                        <option value="female">Nő</option>
+                    </select>
+
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="valaki@példa.hu">
+
+                    <label for="elements">Ön szerint melyik kémiai elem teljesít az elvártak alatt?</label>
+                    <select required name="elements" id="elements">
+                        <option value="H">Hidrogén</option>
+                        <option value="He">Hélium</option>
+                        <option value="Li">Lítium</option>
+                        <option value="Be">Berillium</option>
+                        <option value="B">Bór</option>
+                        <option value="C">Szén</option>
+                        <option value="N">Nitrogén</option>
+                        <option value="O">Oxigén</option>
+                        <option value="F">Fluor</option>
+                        <option value="Ne">Neon</option>
+                        <option value="Na">Nátrium</option>
+                        <option value="Mg">Magnézium</option>
+                        <option value="Al">Alumínium</option>
+                        <option value="Si">Szilícium</option>
+                        <option value="P">Foszfor</option>
+                        <option value="S">Kén</option>
+                        <option value="Cl">Klór</option>
+                        <option value="Ar">Argon</option>
+                        <option value="K">Kálium</option>
+                        <option value="Ca">Kalcium</option>
+                        <option value="Sc">Szkandium</option>
+                        <option value="Ti">Titán</option>
+                        <option value="V">Vanádium</option>
+                        <option value="Cr">Króm</option>
+                        <option value="Mn">Mangán</option>
+                        <option value="Fe">Vas</option>
+                        <option value="Co">Kobalt</option>
+                        <option value="Ni">Nikkel</option>
+                        <option value="Cu">Réz</option>
+                        <option value="Zn">Cink</option>
+                        <option value="Ga">Gallium</option>
+                        <option value="Ge">Germánium</option>
+                        <option value="As">Arzén</option>
+                        <option value="Se">Szelén</option>
+                        <option value="Br">Bróm</option>
+                        <option value="Kr">Kripton</option>
+                        <option value="Rb">Rubídium</option>
+                        <option value="Sr">Stroncium</option>
+                        <option value="Y">Ittrium</option>
+                        <option value="Zr">Cirkónium</option>
+                        <option value="Nb">Nióbium</option>
+                        <option value="Mo">Molibdén</option>
+                        <option value="Tc">Technécium</option>
+                        <option value="Ru">Ruténium</option>
+                        <option value="Rh">Ródium</option>
+                        <option value="Pd">Palládium</option>
+                        <option value="Ag">Ezüst</option>
+                        <option value="Cd">Kadmium</option>
+                        <option value="In">Indium</option>
+                        <option value="Sn">Ón</option>
+                        <option value="Sb">Antimon</option>
+                        <option value="Te">Tellúr</option>
+                        <option value="I">Jód</option>
+                        <option value="Xe">Xenon</option>
+                        <option value="Cs">Cézium</option>
+                        <option value="Ba">Bárium</option>
+                        <option value="La">Lantán</option>
+                        <option value="Hf">Hafnium</option>
+                        <option value="Ta">Tantál</option>
+                        <option value="W">Volfrám</option>
+                        <option value="Re">Rénium</option>
+                        <option value="Os">Ozmium</option>
+                        <option value="Ir">Irídium</option>
+                        <option value="Pt">Platina</option>
+                        <option value="Au">Arany</option>
+                        <option value="Hg">Higany</option>
+                        <option value="Tl">Tallium</option>
+                        <option value="Pb">Ólom</option>
+                        <option value="Bi">Bizmut</option>
+                        <option value="Po">Polónium</option>
+                        <option value="At">Asztácium</option>
+                        <option value="Rn">Radon</option>
+                        <option value="Fr">Francium</option>
+                        <option value="Ra">Rádium</option>
+                        <option value="Ac">Aktínium</option>
+                        <option value="Rf">Raderfordium</option>
+                        <option value="Db">Dubnium</option>
+                        <option value="Sg">Sziborgium</option>
+                        <option value="Bh">Bohrium</option>
+                        <option value="Hs">Hasszium</option>
+                        <option value="Mt">Meitnérium</option>
+                        <option value="Ds">Darmstadtium</option>
+                        <option value="Rg">Röntgénium</option>
+                        <option value="Cn">Kopernícium</option>
+                        <option value="Nh">Nihónium</option>
+                        <option value="Fl">Fleróvium</option>
+                        <option value="Mc">Moszkóvium</option>
+                        <option value="Lv">Livermórium</option>
+                        <option value="Ts">Tenesszium</option>
+                        <option value="Og">Oganeszon</option>
+                    </select>
+
+                    <label for="story">Mondj el egy történetet</label>
+                    <textarea required name="story" id="story"
+                        placeholder="Egyszer volt, hol nem volt . . ."></textarea>
+                    <input type="button" value="OK" onclick="validateForm()">
+                </fieldset>
+            </form>
+        </section>
+        <section class="vertical-section">
+            <img src="Assets/Images/atom.png" alt="Atom" width="100px">
+            <h2>Adatok</h2>
+            <table id="data-table">
+                <tr>
+                    <th>Teljes név</th>
+                    <th>Email</th>
+                    <th>Nem</th>
+                    <th>Alulteljesítő kémiai elem</th>
+                    <th>Történet</th>
+                </tr>
+                <tr>
+                    <td>Sheldon Cooper Phd.</td>
+                    <td>scooper@caltech.edu</td>
+                    <td>Férfi</td>
+                    <td>Argon</td>
+                    <td>Tegnap kétszer is kellett kopognom Penny-nek. Ez felettéb zavaró volt mivel majdnem lemaradtam a
+                        Halo est kezdetéről.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h1>Szerzők</h1>
+        <div class="creator-container">
+            <p class="creator-name">Zámbó Illés</p>
+            <p class="creator-code">Zfb08y</p>
+        </div>
+        <div class="creator-container">
+            <p class="creator-name">Kovács Márton Bence</p>
+            <p class="creator-code">N15t6l</p>
+        </div>
+        <div class="creator-container">
+            <p class="creator-name">Fülöp Andor Zoltán</p>
+            <p class="creator-code">LTLNTG</p>
+        </div>
+    </footer>
+
+    <dialog id="error-dialog">
+        <h3 class="dialog-title">Error</h3>
+        <p id="dialog-msg"></p>
+        <button onclick="closeDialog()">OK</button>
+    </dialog>
+</body>
+
+</html>
